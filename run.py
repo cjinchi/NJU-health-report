@@ -14,10 +14,11 @@ URL_JKDK_APPLY = 'http://ehallapp.nju.edu.cn/xgfw/sys/yqfxmrjkdkappnju/apply/sav
 auth = NjuUiaAuth()
 
 def get_zjhs_time(method='YESTERDAY'):
-    today = datetime.datetime.now(timezone('Asia/Shanghai'))
-    yesterday = today + datetime.timedelta(-1)
-    if method == 'YESTERDAY':
-        return yesterday.strftime("%Y-%m-%d %-H")
+    # today = datetime.datetime.now(timezone('Asia/Shanghai'))
+    # yesterday = today + datetime.timedelta(-1)
+    # if method == 'YESTERDAY':
+    ret = datetime.datetime(2022,4,18,11)
+    return ret.strftime("%Y-%m-%d %-H")
 
 
 if __name__ == "__main__":
